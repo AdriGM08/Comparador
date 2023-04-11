@@ -10,6 +10,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    user-select: none;
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
     font-size: 16px;
@@ -47,6 +48,7 @@
     padding: 10px;
     border: none;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 
