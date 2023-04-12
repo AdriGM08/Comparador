@@ -254,7 +254,7 @@ align-content: center;
                      -1px 0px 2px rgba(255, 255, 255, 0);
             }
 
-            
+
 
 
 .sesgoabajo {
@@ -391,10 +391,9 @@ align-content: center;
 }
 
  img {
-    width: 140px;
-    height: 140px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    border-radius: 100%;
     
 }
 
@@ -596,6 +595,5 @@ input[type="submit"] {
         font-size: 20px;
     }
 }
-Footer
-© 2023 GitHub, Inc.
+
 
