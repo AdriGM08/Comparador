@@ -494,12 +494,27 @@ input[type="submit"] {
 /* Responsive */
 
 @media screen and (max-width:900px) {
+   header {
+    max-height: 350px;
+    min-height: 350px;
+    background-size: auto;
+
+
+    }
     .card {
         width: 48%;
     }
 }
 
 @media screen and (max-width:610px) {
+
+   header {
+    max-height: 350px;
+    min-height: 350px;
+    background-size: auto;
+
+
+    }
     header .textos {
         margin-top: 130px;
     }
@@ -536,8 +551,9 @@ input[type="submit"] {
 @media screen and (max-width:380px) {
     
     header {
-    max-height: 650px;
-    min-height: 650px;
+    max-height: 350px;
+    min-height: 350px;
+    background-size: auto;
 
 
     }
