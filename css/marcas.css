@@ -11,7 +11,7 @@
 
 @font-face{
    font-family: 'Titillium';
-  src: url('fuente/TitilliumWeb-Bold.ttf') format('truetype');
+  src: url('../fuente/TitilliumWeb-Bold.ttf') format('truetype');
   font-style: normal;
   font-weight: normal;
    
@@ -19,7 +19,7 @@
 
 @font-face{
    font-family: 'TitilliumR';
-  src: url('fuente/TitilliumWeb-Light.ttf') format('truetype');
+  src: url('../fuente/TitilliumWeb-Light.ttf') format('truetype');
   font-style: normal;
   font-weight: normal;
    
