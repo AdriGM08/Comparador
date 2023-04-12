@@ -18,13 +18,15 @@ p{
 
 }
 
+img{
+  height: 100%;
+}
+
 header {
     width: 100%;
-   
     max-height: 650px;
     min-height: 650px;
     background-image: linear-gradient(rgba(0,0,0,0.0),rgba(100,100,100,0.85)) ,url(../img/banner.jpg);
-
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
