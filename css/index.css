@@ -34,8 +34,8 @@ img{
 
 header {
     width: 100%;
-    max-height: 650px;
-    min-height: 650px;
+    max-height: 450px;
+    min-height: 450px;
     background-image: linear-gradient(rgba(0,0,0,0.0),rgba(100,100,100,0.85)) ,url(../img/banner.jpg);
     background-attachment: fixed;
     background-position: center;
