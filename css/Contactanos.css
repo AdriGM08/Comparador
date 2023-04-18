@@ -289,11 +289,16 @@ align-content: center;
 }
 
 .contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 90%;
     max-width: 1000px;
     margin: auto;
     overflow: hidden;
     padding: 52px 0;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .titulop {
@@ -307,9 +312,10 @@ align-content: center;
 
 .slogan {
     font-size: 24px;
-    font-weight: 300;
+    font-weight: bold;
     text-align: center;
     margin-bottom: 24px;
+    color: #000;
 }
 
 .parrafo {
@@ -434,8 +440,8 @@ align-content: center;
 
 
 footer {
-    background: #2c3e50;
-    height: auto;
+    background: #000;
+    height: 50px;
 }
 
 .titulo-footer,
@@ -602,3 +608,24 @@ input[type="submit"] {
 }
 
 
+.googleMaps{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.contactos{
+    display: flex;
+    justify-content: space-evenly;
+    width: 300px;
+    padding: 5px 0;
+}
+
+.gmail{
+    color: #000;
+
+}
+
+.telefonoContacto{
+    color: #000;
+}
