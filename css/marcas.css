@@ -359,8 +359,9 @@ align-content: center;
 /* Footer */
 
 footer {
-    background: #2c3e50;
-    height: auto;
+    background: #000;
+    height: 120px;
+    justify-content:  center;
 }
 
 .titulo-footer,
