@@ -430,7 +430,7 @@ align-content: center;
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 64px;
-    width: 100%;
+    width: 60%;
     justify-content: space-between;
 }
 
@@ -442,7 +442,8 @@ align-content: center;
 
 footer {
     background: #000;
-    height: 50px;
+    height: 120px;
+    justify-content:  center;
 }
 
 .titulo-footer,
@@ -616,9 +617,8 @@ input[type="submit"] {
 }
 
 .contactos{
-    display: flex;
-    justify-content: space-evenly;
-    width: 300px;
+    justify-content: center;
+    width: 500px;
     padding: 5px 0;
 }
 
