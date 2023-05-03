@@ -437,6 +437,10 @@ footer {
     background: #000;
     height: 140px;
     justify-content:  center;
+    bottom: 0;
+position: fixed;   
+width: 100%;
+text-align: left;
 }
 
 .titulo-footer,
