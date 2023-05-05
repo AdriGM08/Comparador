@@ -290,30 +290,16 @@ align-content: center;
 }
 
 .contenedor {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    width: 90%;
     max-width: 1000px;
     margin: auto;
     overflow: hidden;
     padding: 52px 0;
     font-size: 24px;
     font-weight: bold;
-        flex-wrap: wrap;
       }
   
-      /* Estilo para la columna izquierda */
-      .columna-izquierda {
-        flex-basis: 50%;
-        padding: 20px;
-      }
-  
-      /* Estilo para la columna derecha */
-      .columna-derecha {
-        flex-basis: 50%;
-        padding: 20px;
-      }
+
 
 
 .titulop {
@@ -458,6 +444,11 @@ footer {
     background: #000;
     height: 140px;
     justify-content:  center;
+    bottom: 0;
+width: 100%;
+text-align: center;
+
+
 }
 
 .titulo-footer,
