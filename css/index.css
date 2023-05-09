@@ -251,6 +251,12 @@ align-content: center;
             #slide-3:checked ~ .control-3 ~ .slide-indicador 
                   li:nth-child(3) .slide-circulo {
                 color: #428bca;
+            #slide-4:checked ~ .control-4 ~ .slide-indicador 
+                  li:nth-child(4) .slide-circulo {
+                color: #428bca;
+            #slide-5:checked ~ .control-5 ~ .slide-indicador 
+                  li:nth-child(5) .slide-circulo {
+                color: #428bca;    
             }
             #titulo1 {
                 width: 100%;
@@ -607,5 +613,3 @@ input[type="submit"] {
         font-size: 20px;
     }
 }
-
-
