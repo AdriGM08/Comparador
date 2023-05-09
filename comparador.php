@@ -18,7 +18,13 @@ include("conexion.php");
 $marca=""
 $modelo=""
 
-$registros=$base->query("SELECT * FROM Comparador where Marca=$marca  and $modelo")->fetchAll(PDO::FETCH_OBJ);
+$sql="SELECT * FROM Comparador where Marca=$marca  and $modelo";
+$caracteristicas=$conn->query($sql);
+
+$selectMarcas="SELECT Marca from comparador"
+$selectModelo="SELECT Modelo from comparador"
+$marcas=$conn->query($selectMarcas)
+$modelos=$conn->query($selectModelo)
 
 
 ?>
