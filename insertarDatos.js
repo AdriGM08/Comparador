@@ -19,9 +19,9 @@ const db = getFirestore(app);
 
 const auth = getAuth(app);
 
-auth.signInWithEmailAndPassword("zihao@coches.com", "zihaoCoches")
-  .then(() => {
-    console.log("Usuario autenticado");
+// auth.signInWithEmailAndPassword("zihao@coches.com", "zihaoCoches")
+//   .then(() => {
+//     console.log("Usuario autenticado");
 
 const coleccionCoches = collection(db,"Coches");
 
@@ -43,6 +43,6 @@ addDoc(coleccionCoches, datosCoche)
         console.error("Error al insertar los datos:", error);
     });
 
-  });
+//   });
   
 }
