@@ -1,145 +1,20 @@
 <!DOCTYPE html>
 <html>
-
-    <head>
-        <link rel="stylesheet" href="css/index.css"/>
-    </head>
-
-
-
-    <body>
-
-      <header>
-
-         <center><div class="titulo"><H1>Auto-Search</H1></div></center>
-
-         <center>
-            <div class="menu"><a href="index.html">INICIO</a><a href="marcas.html">MARCAS</a><a href="comparador.html">COMPARADOR</a><a
-                href="nosotros.html">NOSOTROS</a><a href="contactanos.html">CONTACTANOS</a></div>
-          </center>
-    </header>
-    <br>
-    
-
-    <center><h1>Bienvenidos a Auto-Search</h1></center>
-    <br/>
-    <center><img src="img/Logo.PNG"></center>
-    <br>
-    <center><p>Adentrate en nuestra web y podras desde contemplar unas de las mejores opciones en el mercado actualmente hasta contactar con nosotros para que os ayudemos a buscar vuestro coche ideal, a continuacion les dejamos con nuestros vehiculos destacados en este ultimo mes, son unas de las mejores opciones en calidad/precio segun sus necesidades ya que tenemos un coche de cada segmento, espero les gusten. </p></center>
-    <br/>
-
- <div class="slide">
-            <div class="slide-inner">
-
-                <!-- Honda NSX -->
-                <input class="slide-open" type="radio" id="slide-1" 
-                      name="slide" aria-hidden="true" hidden="" checked="checked">
-                      <div class="slide-item">
-                        <center>
-                            <p>Nuestro deportivo destacado es de la marca HONDA, es su modelo NSX</p>
-                          <!-- <a href="marcas/honda.html"> --> <img width="55%" src="marcas/img/hondansx.png"><!-- </a> -->
-                        </center>
-                        
-                    </div>
-
-                    <!-- Audi A1 -->
-                <input class="slide-open" type="radio" id="slide-2" 
-                      name="slide" aria-hidden="true" hidden="">
-
-                
-                <div class="slide-item">
-                    <center>
-                        <p>Nuestro vehiculo urbano destacado es de la marca AUDI, es su modelo A1</p> 
-                         <!-- <a href="marcas/audi.html"> --> <img width="40%" src="marcas/img/audia1.png" ><!-- </a> -->
-                    </center>
-                    </div>
-
-                    <!-- Chevrolet colorado -->
-                <input class="slide-open" type="radio" id="slide-3" 
-                      name="slide" aria-hidden="true" hidden="">
-                      
-                      <div class="slide-item">
-                        <center>
-                            <p>Nuestra pick-up destacada es de la marca CHEVROLET, es su modelo COLORADO</p>
-                            <!-- <a href="marcas/chevrolet.html"> --><img width="50%" src="marcas/img/colorado.png"><!--  </a>  -->
-                            
-                        </center>
-                    </div>
-
-
-                      <!-- Mercedes GLA -->
-                <input class="slide-open" type="radio" id="slide-4" 
-                      name="slide" aria-hidden="true" hidden="">
-                      
-                      <div class="slide-item">
-                        <center>
-                            <p>Nuestro SUV destacado es de la marca MERCEDES, es su modelo GLA</p>
-                            <!-- <a href="marcas/mercedes.html"> --><img width="40%" src="marcas/img/MercedesGla2.png"><!--  </a>  -->
-                            
-                        </center>
-                    </div>
-
-                      <!-- Chevrolet Blazer -->
-                <input class="slide-open" type="radio" id="slide-5" 
-                      name="slide" aria-hidden="true" hidden="">
-                      
-                      <div class="slide-item">
-                        <center>
-                            <p>Nuestro todocamino destacado es de la marca CHEVROLET, es su modelo BLAZER</p>
-                            <!-- <a href="marcas/Chevrolet.html"> --><img width="45%" src="marcas/img/blazer.png"><!--  </a>  -->
-                            
-                        </center>
-                    </div>
-
-                
-
-                
-                
-                <label for="slide-5" class="slide-control prev control-1">‹</label>
-                <label for="slide-5" class="slide-control next control-4">›</label>
-
-                <label for="slide-4" class="slide-control prev control-5">‹</label>
-                <label for="slide-4" class="slide-control next control-3">›</label>
-
-                <label for="slide-3" class="slide-control prev control-4">‹</label>
-                <label for="slide-3" class="slide-control next control-2">›</label>
-
-                <label for="slide-2" class="slide-control next control-1">›</label>
-                <label for="slide-2" class="slide-control prev control-3">‹</label>
-
-                <label for="slide-1" class="slide-control prev control-2">‹</label>
-                <label for="slide-1" class="slide-control next control-5">›</label>
-                <ol class="slide-indicador">
-                    <li>
-                        <label for="slide-1" class="slide-circulo">•</label>
-                    </li>
-                    <li>
-                        <label for="slide-2" class="slide-circulo">•</label>
-                    </li>
-                    <li>
-                        <label for="slide-3" class="slide-circulo">•</label>
-                    </li>
-                    <li>
-                        <label for="slide-4" class="slide-circulo">•</label>
-                    </li>
-                    <li>
-                        <label for="slide-5" class="slide-circulo">•</label>
-                    </li>
-                </ol>
-            </div>
-        </div>
-        <footer>
-
-            <div class="contactos">
-                <br>
-              <p style="color: white;">Nuestras redes : </p>
-              <a href="https://www.instagram.com/Auto-Search/"><img src="img/instag.png" width="30px" height="30px"></a>
-              <a href="https://twitter.com/Auto-Search"><img src="img/twitter.png" width="30px" height="30px"></a>
-              <a href="https://es-la.facebook.com/pages/category/Auto-Search/"><img src="img/facebooks.png" width="30px"></a>
-              <p style="color: white;">pincha en los iconos para acceder.</p>
-            </div>
-        
-          </footer>
-    </body>
-
+<head>
+  <meta charset="UTF-8">
+  <title>Mi aplicación Firebase</title>
+  <!-- Incluye la biblioteca de Firebase -->
+  <script type="module" src="https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js"></script>
+  <!-- Incluye la biblioteca de Firestore -->
+  <script type="module" src="https://www.gstatic.com/firebasejs/9.21.0/firebase-firestore.js"></script>
+  <!-- Incluye el archivo con el código de inserción de datos -->
+  <script type="module">
+    import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js';
+    import { getFirestore } from 'https://www.gstatic.com/firebasejs/9.21.0/firebase-firestore.js';
+  </script>
+</head>
+<body>
+  <!-- Contenido de tu aplicación -->
+  <script type="module" src="insertarDatos.js"></script>
+</body>
 </html>
