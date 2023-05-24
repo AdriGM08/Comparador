@@ -1,5 +1,5 @@
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js';
-import { getFirestore, collection, getDocs } from 'https://www.gstatic.com/firebasejs/9.0.2/firebase-firestore.js';
+import { getFirestore, collection, getDocs, query, where } from 'https://www.gstatic.com/firebasejs/9.0.2/firebase-firestore.js';
 
 window.onload = function () {
 
@@ -99,4 +99,7 @@ window.onload = function () {
     .catch((error) => {
       console.error('Error al obtener las marcas:', error);
     });
+
+    selectMarca1.addEventListener("click", cargarModelos1)
+    selectMarca2.addEventListener("click", cargarModelos2)
 }
