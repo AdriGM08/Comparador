@@ -437,8 +437,11 @@ footer {
     height: 140px;
     justify-content:  center;
     bottom: 0;
-width: 100%;
-text-align: center;
+ width: 100%;
+ text-align: center;
+ float: flex flex ;
+ direction: vertical justify;
+ item: bottom;
 
 
 }
