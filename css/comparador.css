@@ -431,6 +431,15 @@ align-content: center;
     width: 30%;
 }
 
+.separador{
+    height: 300px;
+}
+
+.divFooter{
+    height: 100%;
+    display: flex;
+    justify-content: end;
+}
 
 footer {
     background: #000;
@@ -441,9 +450,6 @@ footer {
  text-align: center;
  float: flex flex ;
  direction: vertical justify;
- item: bottom;
-
-
 }
 
 .titulo-footer,
