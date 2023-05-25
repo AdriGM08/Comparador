@@ -17,6 +17,16 @@ window.onload = function () {
   const selectModelo1 = document.getElementById('selectModelo1');
   const selectMarca2 = document.getElementById('selectMarca2');
   const selectModelo2 = document.getElementById('selectModelo2');
+  const selectPotenciaModelo1 = document.getElementById('selectPotenciaModelo1');
+  const selectPotenciaModelo2 = document.getElementById('selectPotenciaModelo2');
+  const selectPrecioModelo1 = document.getElementById('selectPrecioModelo1');
+  const selectPrecioModelo2 = document.getElementById('selectPrecioModelo2');
+  const selectPesoModelo1 = document.getElementById('selectPesoModelo1');
+  const selectPesoModelo2 = document.getElementById('selectPesoModelo2');
+  const selectConsumoModelo1 = document.getElementById('selectConsumoModelo1');
+  const selectConsumoModelo2 = document.getElementById('selectConsumoModelo2');
+  const selectCilindradaModelo1 = document.getElementById('selectCilindradaModelo1');
+  const selectCilindradaModelo2 = document.getElementById('selectCilindradaModelo2');
 
   // Inicializar la aplicación Firebase
   const app = initializeApp(firebaseConfig);
