@@ -17,16 +17,16 @@ window.onload = function () {
   const selectModelo1 = document.getElementById('selectModelo1');
   const selectMarca2 = document.getElementById('selectMarca2');
   const selectModelo2 = document.getElementById('selectModelo2');
-  const selectPotenciaModelo1 = document.getElementById('selectPotenciaModelo1');
-  const selectPotenciaModelo2 = document.getElementById('selectPotenciaModelo2');
-  const selectPrecioModelo1 = document.getElementById('selectPrecioModelo1');
-  const selectPrecioModelo2 = document.getElementById('selectPrecioModelo2');
-  const selectPesoModelo1 = document.getElementById('selectPesoModelo1');
-  const selectPesoModelo2 = document.getElementById('selectPesoModelo2');
-  const selectConsumoModelo1 = document.getElementById('selectConsumoModelo1');
-  const selectConsumoModelo2 = document.getElementById('selectConsumoModelo2');
-  const selectCilindradaModelo1 = document.getElementById('selectCilindradaModelo1');
-  const selectCilindradaModelo2 = document.getElementById('selectCilindradaModelo2');
+  const selectPotencia1 = document.getElementById('selectPotencia1');
+  const selectPotencia2 = document.getElementById('selectPotencia2');
+  const selectPrecio1 = document.getElementById('selectPrecio1');
+  const selectPrecio2 = document.getElementById('selectPrecio2');
+  const selectPeso1 = document.getElementById('selectPeso1');
+  const selectPeso2 = document.getElementById('selectPeso2');
+  const selectConsumo1 = document.getElementById('selectConsumo1');
+  const selectConsumo2 = document.getElementById('selectConsumo2');
+  const selectCilindrada1 = document.getElementById('selectCilindrada1');
+  const selectCilindrada2 = document.getElementById('selectCilindrada2');
 
   // Inicializar la aplicación Firebase
   const app = initializeApp(firebaseConfig);
@@ -86,6 +86,50 @@ window.onload = function () {
       });
   }
 
+  function cargarPotencia1(){
+
+  // Obtener la marca seleccionada
+  const marcaSeleccionada = selectMarca1.value;
+  // Obtener el modelo seleccionado
+  const modeloSeleccionado = selectModelo1.value;
+
+    getDocs(query(cochesCollection, where('Marca', '==', marcaSeleccionada), where('Modelo', '==', modeloSeleccionado)))
+    .then((querySnapshot) => {
+      querySnapshot.forEach((doc) => {
+        // Acceder al campo "Potencia" de cada documento
+        const potencia = doc.data().Potencia;
+
+        // Actualizar el contenido del label con la potencia obtenida
+        selectPotencia1.textContent = `POTENCIA: ${potencia}`;
+      });
+    })
+    .catch((error) => {
+      console.error('Error al obtener las potencias:', error);
+    });
+  }
+
+  function cargarPotencia2(){
+
+    // Obtener la marca seleccionada
+    const marcaSeleccionada = selectMarca2.value;
+    // Obtener el modelo seleccionado
+    const modeloSeleccionado = selectModelo2.value;
+  
+      getDocs(query(cochesCollection, where('Marca', '==', marcaSeleccionada), where('Modelo', '==', modeloSeleccionado)))
+      .then((querySnapshot) => {
+        querySnapshot.forEach((doc) => {
+          // Acceder al campo "Potencia" de cada documento
+          const potencia = doc.data().Potencia;
+  
+          // Actualizar el contenido del label con la potencia obtenida
+          selectPotencia2.textContent = `POTENCIA: ${potencia}`;
+        });
+      })
+      .catch((error) => {
+        console.error('Error al obtener las potencias:', error);
+      });
+    }
+
   // Consultar las marcas únicas y cargarlas en el primer select
   getDocs(cochesCollection)
     .then((querySnapshot) => {
@@ -110,6 +154,16 @@ window.onload = function () {
       console.error('Error al obtener las marcas:', error);
     });
 
+    function modelo1() {
+      cargarPotencia1();
+    }
+
+    function modelo2() {
+      cargarPotencia2();
+    }
+
     selectMarca1.addEventListener("click", cargarModelos1)
     selectMarca2.addEventListener("click", cargarModelos2)
+    selectModelo1.addEventListener("click",modelo1)
+    selectModelo2.addEventListener("click", modelo2)
 }
