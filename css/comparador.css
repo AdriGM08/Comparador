@@ -441,6 +441,28 @@ align-content: center;
     justify-content: end;
 }
 
+.width100{
+    width: 100%;
+    display: flex;
+}
+
+.imagenComparador{
+    width: 30%;
+}
+
+.datosComparador{
+    width: 20%;
+    text-align: start;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cochesTitulo{
+    width: 50%;
+    text-align: center;
+}
+
 footer {
     background: #000;
     height: 140px;
