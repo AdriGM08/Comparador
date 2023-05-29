@@ -169,7 +169,7 @@ window.onload = function () {
         const peso = doc.data().Peso;
 
         // Actualizar el contenido del label con la peso obtenida
-        selectPotencia1.textContent = `PESO: ${peso}`;
+        selectPeso1.textContent = `PESO: ${peso}`;
       });
     })
     .catch((error) => {
@@ -191,7 +191,7 @@ window.onload = function () {
           const peso = doc.data().Peso;
   
           // Actualizar el contenido del label con la peso obtenida
-          selectPotencia2.textContent = `PESO: ${peso}`;
+          selectPeso2.textContent = `PESO: ${peso}`;
         });
       })
       .catch((error) => {
@@ -200,16 +200,16 @@ window.onload = function () {
     }
 
      function modelo1() {
-      cargarPotencia1();
+      cargarPotencia1(),
       cargarPeso1();
     }
 
     function modelo2() {
-      cargarPotencia2();
+      cargarPotencia2(),
       cargarPeso2();
     }
 
-    
+
 
 
     selectMarca1.addEventListener("click", cargarModelos1)
