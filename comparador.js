@@ -199,14 +199,14 @@ window.onload = function () {
       });
     }
 
-     function modelo1() {
-      cargarPotencia1()
-    }
+     
+      cargarPotencia1();
+    
 
-    function modelo2() {
-      cargarPotencia2(),
+    
+      cargarPotencia2();
       cargarPeso2();
-    }
+    
 
 
 
