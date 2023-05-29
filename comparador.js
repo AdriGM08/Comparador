@@ -332,7 +332,7 @@ window.onload = function () {
         });
       })
       .catch((error) => {
-        console.error('Error al obtener los pesos:', error);
+        console.error('Error al obtener las cilindradas:', error);
       });
     }
 
@@ -353,11 +353,11 @@ window.onload = function () {
         const img = doc.data().img;
 
         // Actualizar el contenido del label con la img obtenida
-        selectimg1.textContent = `${img}`;
+        selectimg1.style.backgroundImage = `url(marcas/img/${img})`;
       });
     })
     .catch((error) => {
-      console.error('Error al obtener los pesos:', error);
+      console.error('Error al obtener la imagen:', error);
     });
   }
 
@@ -375,11 +375,11 @@ window.onload = function () {
           const img = doc.data().img;
   
           // Actualizar el contenido del label con la img obtenida
-          selectimg2.textContent = `${img}`;
+          selectimg2.style.backgroundImage = `url(marcas/img/${img})`;
         });
       })
       .catch((error) => {
-        console.error('Error al obtener los pesos:', error);
+        console.error('Error al obtener la imagen:', error);
       });
     }
 
@@ -399,7 +399,6 @@ window.onload = function () {
       cargarConsumo2(),
       cargarCilindrada2(),
       cargarimg2();
-    
     }
 
 
