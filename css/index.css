@@ -181,6 +181,15 @@ align-content: center;
                 -webkit-transition: opacity 0.6s ease-out;
                 transition: opacity 0.6s ease-out;
             }
+
+            .slide-text{
+                 color: #gray;
+                 font-size: 30px;
+               
+                  top: 10%;
+              -webkit-text-stroke: 0.5px white;
+
+            }    
             .slide-item img {
                 display: block;
                 height: auto;
