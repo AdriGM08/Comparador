@@ -201,11 +201,18 @@ window.onload = function () {
 
      function modelo1() {
       cargarPotencia1();
-      cargarPeso1();
     }
 
     function modelo2() {
       cargarPotencia2();
+    }
+
+     function modelo1() {
+      cargarPeso1();
+    }
+
+    function modelo2() {
+      
       cargarPeso2();
     }
 
