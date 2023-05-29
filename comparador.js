@@ -200,21 +200,15 @@ window.onload = function () {
     }
 
      function modelo1() {
-      cargarPotencia1();
+      cargarPotencia1()
     }
 
     function modelo2() {
-      cargarPotencia2();
-    }
-
-     function modelo1() {
-      cargarPeso1();
-    }
-
-    function modelo2() {
-      
+      cargarPotencia2(),
       cargarPeso2();
     }
+
+
 
 
     selectMarca1.addEventListener("click", cargarModelos1)
