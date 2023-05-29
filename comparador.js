@@ -27,6 +27,8 @@ window.onload = function () {
   const selectConsumo2 = document.getElementById('selectConsumo2');
   const selectCilindrada1 = document.getElementById('selectCilindrada1');
   const selectCilindrada2 = document.getElementById('selectCilindrada2');
+  const selectimg1 = document.getElementById('selectimg1');
+  const selectimg2 = document.getElementById('selectimg2');
 
   // Inicializar la aplicación Firebase
   const app = initializeApp(firebaseConfig);
@@ -199,14 +201,205 @@ window.onload = function () {
       });
     }
 
+
+
+     function cargarPrecio1(){
+
+  // Obtener la marca seleccionada
+  const marcaSeleccionada = selectMarca1.value;
+  // Obtener el modelo seleccionado
+  const modeloSeleccionado = selectModelo1.value;
+
+    getDocs(query(cochesCollection, where('Marca', '==', marcaSeleccionada), where('Modelo', '==', modeloSeleccionado)))
+    .then((querySnapshot) => {
+      querySnapshot.forEach((doc) => {
+        // Acceder al campo "precio" de cada documento
+        const precio = doc.data().Precio;
+
+        // Actualizar el contenido del label con el precio obtenida
+        selectPrecio1.textContent = `PRECIO: ${precio}`;
+      });
+    })
+    .catch((error) => {
+      console.error('Error al obtener los precios:', error);
+    });
+  }
+
+  function cargarPrecio2(){
+
+    // Obtener la marca seleccionada
+    const marcaSeleccionada = selectMarca2.value;
+    // Obtener el modelo seleccionado
+    const modeloSeleccionado = selectModelo2.value;
+  
+      getDocs(query(cochesCollection, where('Marca', '==', marcaSeleccionada), where('Modelo', '==', modeloSeleccionado)))
+      .then((querySnapshot) => {
+        querySnapshot.forEach((doc) => {
+          // Acceder al campo "precio" de cada documento
+          const precio = doc.data().Precio;
+  
+          // Actualizar el contenido del label con el precio obtenida
+          selectPrecio2.textContent = `PRECIO: ${precio}`;
+        });
+      })
+      .catch((error) => {
+        console.error('Error al obtener los precios:', error);
+      });
+    }
+
+
+         function cargarConsumo1(){
+
+  // Obtener la marca seleccionada
+  const marcaSeleccionada = selectMarca1.value;
+  // Obtener el modelo seleccionado
+  const modeloSeleccionado = selectModelo1.value;
+
+    getDocs(query(cochesCollection, where('Marca', '==', marcaSeleccionada), where('Modelo', '==', modeloSeleccionado)))
+    .then((querySnapshot) => {
+      querySnapshot.forEach((doc) => {
+        // Acceder al campo "consumo" de cada documento
+        const consumo = doc.data().Consumo;
+
+        // Actualizar el contenido del label con el consumo obtenida
+        selectConsumo1.textContent = `CONSUMO: ${consumo}`;
+      });
+    })
+    .catch((error) => {
+      console.error('Error al obtener los consumos:', error);
+    });
+  }
+
+  function cargarConsumo2(){
+
+    // Obtener la marca seleccionada
+    const marcaSeleccionada = selectMarca2.value;
+    // Obtener el modelo seleccionado
+    const modeloSeleccionado = selectModelo2.value;
+  
+      getDocs(query(cochesCollection, where('Marca', '==', marcaSeleccionada), where('Modelo', '==', modeloSeleccionado)))
+      .then((querySnapshot) => {
+        querySnapshot.forEach((doc) => {
+          // Acceder al campo "consumo" de cada documento
+          const consumo = doc.data().Consumo;
+  
+          // Actualizar el contenido del label con el consumo obtenida
+          selectConsumo2.textContent = `CONSUMO: ${consumo}`;
+        });
+      })
+      .catch((error) => {
+        console.error('Error al obtener los consumos:', error);
+      });
+    }
+
+     function cargarCilindrada1(){
+
+  // Obtener la marca seleccionada
+  const marcaSeleccionada = selectMarca1.value;
+  // Obtener el modelo seleccionado
+  const modeloSeleccionado = selectModelo1.value;
+
+    getDocs(query(cochesCollection, where('Marca', '==', marcaSeleccionada), where('Modelo', '==', modeloSeleccionado)))
+    .then((querySnapshot) => {
+      querySnapshot.forEach((doc) => {
+        // Acceder al campo "cilindrada" de cada documento
+        const cilindrada = doc.data().Cilindrada;
+
+        // Actualizar el contenido del label con la cilindrada obtenida
+        selectCilindrada1.textContent = `CILINDRADA: ${cilindrada}`;
+      });
+    })
+    .catch((error) => {
+      console.error('Error al obtener las cilindradas:', error);
+    });
+  }
+
+  function cargarCilindrada2(){
+
+    // Obtener la marca seleccionada
+    const marcaSeleccionada = selectMarca2.value;
+    // Obtener el modelo seleccionado
+    const modeloSeleccionado = selectModelo2.value;
+  
+      getDocs(query(cochesCollection, where('Marca', '==', marcaSeleccionada), where('Modelo', '==', modeloSeleccionado)))
+      .then((querySnapshot) => {
+        querySnapshot.forEach((doc) => {
+          // Acceder al campo "cilindrada" de cada documento
+          const cilindrada = doc.data().Cilindrada;
+  
+          // Actualizar el contenido del label con el cilindrada obtenida
+          selectCilindrada2.textContent = `CILINDRADA: ${cilindrada}`;
+        });
+      })
+      .catch((error) => {
+        console.error('Error al obtener los pesos:', error);
+      });
+    }
+
+
+
+
+     function cargarimg1(){
+
+  // Obtener la marca seleccionada
+  const marcaSeleccionada = selectMarca1.value;
+  // Obtener el modelo seleccionado
+  const modeloSeleccionado = selectModelo1.value;
+
+    getDocs(query(cochesCollection, where('Marca', '==', marcaSeleccionada), where('Modelo', '==', modeloSeleccionado)))
+    .then((querySnapshot) => {
+      querySnapshot.forEach((doc) => {
+        // Acceder al campo "img" de cada documento
+        const img = doc.data().img;
+
+        // Actualizar el contenido del label con la img obtenida
+        selectimg1.textContent = `${img}`;
+      });
+    })
+    .catch((error) => {
+      console.error('Error al obtener los pesos:', error);
+    });
+  }
+
+  function cargarimg2(){
+
+    // Obtener la marca seleccionada
+    const marcaSeleccionada = selectMarca2.value;
+    // Obtener el modelo seleccionado
+    const modeloSeleccionado = selectModelo2.value;
+  
+      getDocs(query(cochesCollection, where('Marca', '==', marcaSeleccionada), where('Modelo', '==', modeloSeleccionado)))
+      .then((querySnapshot) => {
+        querySnapshot.forEach((doc) => {
+          // Acceder al campo "img" de cada documento
+          const img = doc.data().img;
+  
+          // Actualizar el contenido del label con la img obtenida
+          selectimg2.textContent = `${img}`;
+        });
+      })
+      .catch((error) => {
+        console.error('Error al obtener los pesos:', error);
+      });
+    }
+
      function modelo1() {
       cargarPotencia1(),
-      cargarPeso1();
+      cargarPeso1(),
+      cargarPrecio1(),
+      cargarConsumo1(),
+      cargarCilindrada1(),
+      cargarimg1();
     }
 
     function modelo2() {
       cargarPotencia2(),
-      cargarPeso2();
+      cargarPeso2(),
+      cargarPrecio2(),
+      cargarConsumo2(),
+      cargarCilindrada2(),
+      cargarimg2();
+    
     }
 
 
