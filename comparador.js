@@ -154,13 +154,61 @@ window.onload = function () {
       console.error('Error al obtener las marcas:', error);
     });
 
-    function modelo1() {
+   
+    function cargarPeso1(){
+
+  // Obtener la marca seleccionada
+  const marcaSeleccionada = selectMarca1.value;
+  // Obtener el modelo seleccionado
+  const modeloSeleccionado = selectModelo1.value;
+
+    getDocs(query(cochesCollection, where('Marca', '==', marcaSeleccionada), where('Modelo', '==', modeloSeleccionado)))
+    .then((querySnapshot) => {
+      querySnapshot.forEach((doc) => {
+        // Acceder al campo "Peso" de cada documento
+        const peso = doc.data().Peso;
+
+        // Actualizar el contenido del label con la peso obtenida
+        selectPotencia1.textContent = `PESO: ${peso}`;
+      });
+    })
+    .catch((error) => {
+      console.error('Error al obtener los pesos:', error);
+    });
+  }
+
+  function cargarPeso2(){
+
+    // Obtener la marca seleccionada
+    const marcaSeleccionada = selectMarca2.value;
+    // Obtener el modelo seleccionado
+    const modeloSeleccionado = selectModelo2.value;
+  
+      getDocs(query(cochesCollection, where('Marca', '==', marcaSeleccionada), where('Modelo', '==', modeloSeleccionado)))
+      .then((querySnapshot) => {
+        querySnapshot.forEach((doc) => {
+          // Acceder al campo "Peso" de cada documento
+          const peso = doc.data().Peso;
+  
+          // Actualizar el contenido del label con la peso obtenida
+          selectPotencia2.textContent = `PESO: ${peso}`;
+        });
+      })
+      .catch((error) => {
+        console.error('Error al obtener los pesos:', error);
+      });
+    }
+
+     function modelo1() {
       cargarPotencia1();
+      cargarPeso1();
     }
 
     function modelo2() {
       cargarPotencia2();
+      cargarPeso2();
     }
+
 
     selectMarca1.addEventListener("click", cargarModelos1)
     selectMarca2.addEventListener("click", cargarModelos2)
