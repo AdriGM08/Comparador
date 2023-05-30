@@ -228,7 +228,8 @@ align-content: center;
             #slide-2:checked ~ .control-2,
             #slide-3:checked ~ .control-3,
             #slide-4:checked ~ .control-4,
-            #slide-5:checked ~ .control-5 {
+            #slide-5:checked ~ .control-5,
+            #slide-6:checked ~ .control-6{
                 display: block;
             }
             .slide-indicador {
@@ -264,7 +265,9 @@ align-content: center;
             #slide-4:checked ~ .control-4 ~ .slide-indicador 
                   li:nth-child(4) .slide-circulo,
             #slide-5:checked ~ .control-5 ~ .slide-indicador 
-                  li:nth-child(5) .slide-circulo {
+                  li:nth-child(5) .slide-circulo,
+                  #slide-6:checked ~ .control-6 ~ .slide-indicador 
+                  li:nth-child(6) .slide-circulo {
                 color: #428bca;
             }
             #titulo1 {
