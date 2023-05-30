@@ -102,7 +102,7 @@ window.onload = function () {
         const potencia = doc.data().Potencia;
 
         // Actualizar el contenido del label con la potencia obtenida
-        selectPotencia1.textContent = `POTENCIA: ${potencia}`;
+        selectPotencia1.textContent = `POTENCIA: ${potencia} CV`;
       });
     })
     .catch((error) => {
@@ -124,7 +124,7 @@ window.onload = function () {
           const potencia = doc.data().Potencia;
   
           // Actualizar el contenido del label con la potencia obtenida
-          selectPotencia2.textContent = `POTENCIA: ${potencia}`;
+          selectPotencia2.textContent = `POTENCIA: ${potencia} CV`;
         });
       })
       .catch((error) => {
@@ -171,7 +171,7 @@ window.onload = function () {
         const peso = doc.data().Peso;
 
         // Actualizar el contenido del label con la peso obtenida
-        selectPeso1.textContent = `PESO: ${peso}`;
+        selectPeso1.textContent = `PESO: ${peso} KG`;
       });
     })
     .catch((error) => {
@@ -193,7 +193,7 @@ window.onload = function () {
           const peso = doc.data().Peso;
   
           // Actualizar el contenido del label con la peso obtenida
-          selectPeso2.textContent = `PESO: ${peso}`;
+          selectPeso2.textContent = `PESO: ${peso} KG`;
         });
       })
       .catch((error) => {
@@ -217,7 +217,7 @@ window.onload = function () {
         const precio = doc.data().Precio;
 
         // Actualizar el contenido del label con el precio obtenida
-        selectPrecio1.textContent = `PRECIO: ${precio}`;
+        selectPrecio1.textContent = `PRECIO: ${precio} €`;
       });
     })
     .catch((error) => {
@@ -239,7 +239,7 @@ window.onload = function () {
           const precio = doc.data().Precio;
   
           // Actualizar el contenido del label con el precio obtenida
-          selectPrecio2.textContent = `PRECIO: ${precio}`;
+          selectPrecio2.textContent = `PRECIO: ${precio} €`;
         });
       })
       .catch((error) => {
@@ -262,7 +262,7 @@ window.onload = function () {
         const consumo = doc.data().Consumo;
 
         // Actualizar el contenido del label con el consumo obtenida
-        selectConsumo1.textContent = `CONSUMO: ${consumo}`;
+        selectConsumo1.textContent = `CONSUMO: ${consumo} L/100`;
       });
     })
     .catch((error) => {
@@ -284,7 +284,7 @@ window.onload = function () {
           const consumo = doc.data().Consumo;
   
           // Actualizar el contenido del label con el consumo obtenida
-          selectConsumo2.textContent = `CONSUMO: ${consumo}`;
+          selectConsumo2.textContent = `CONSUMO: ${consumo} L/100`;
         });
       })
       .catch((error) => {
